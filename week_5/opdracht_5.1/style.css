@@ -120,6 +120,7 @@ footer {
   width: 330px;
 }
 .watisjavascript {
+  position: absolute;
   left: 37rem;
   top: 19rem;
   font-weight: bold;
@@ -133,7 +134,6 @@ footer {
   font-weight: bold;
   font-size: large;
   white-space: nowrap;
-  position: absolute;
 }
 .kleur3 {
   color: yellow;
@@ -245,4 +245,48 @@ footer {
   margin-top: 90px;
   scale: 200%;
   position: relative;
+}
+.dropknop {
+  background-color: #00a8c7;
+  color: white;
+  padding: 16px;
+  font-size: 2.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdowncontent a {
+  color: black;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  display: black;
+  text-align: left;
+  text-decoration: none;
+  display: black;
+  font-size: 1.9rem;
+}
+.dropdowncontent a:hover {
+  background-color: #E9E9E9;
+}
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+.dropdown:hover .dropknop {
+  background-color: white;
+  color: #00a8c7;
+  font-weight: bold;
 }
